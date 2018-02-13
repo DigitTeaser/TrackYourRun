@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/activity_spacing">
+
+        <ImageView
+            android:id="@+id/icon_delete"
+            android:layout_width="@dimen/item_edit_icon_size"
+            android:layout_height="@dimen/item_edit_icon_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/delete_icon_description"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/icon_delete"
+            android:layout_toStartOf="@id/icon_delete"
+            android:padding="@dimen/activity_spacing"
+            android:text="@string/delete"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/activity_spacing">
+
+            <TextView
+                android:id="@+id/item_distance"
+                android:layout_width="@dimen/item_distance_size"
+                android:layout_height="@dimen/item_distance_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/distance_circle"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/item_distance_text_size"
+                tools:text="65.9\nkm" />
+
+            <TextView
+                android:id="@+id/item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/item_distance"
+                android:layout_toEndOf="@id/item_distance"
+                android:layout_toRightOf="@id/item_distance"
+                android:paddingLeft="@dimen/activity_spacing"
+                android:paddingRight="@dimen/activity_spacing"
+                android:textSize="@dimen/item_time_text_size"
+                tools:text="Tue, Feb 13, 2018" />
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/item_date"
+                android:layout_toRightOf="@id/item_date"
+                android:textSize="@dimen/item_time_text_size"
+                tools:text="15:12" />
+
+            <TextView
+                android:id="@+id/item_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_distance"
+                android:layout_toEndOf="@id/item_distance"
+                android:layout_toRightOf="@id/item_distance"
+                android:paddingLeft="@dimen/activity_spacing"
+                android:paddingRight="@dimen/activity_spacing"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/item_duration_text_size"
+                tools:text="1 hour 30 minutes" />
+
+            <ImageView
+                android:layout_width="@dimen/item_edit_icon_size"
+                android:layout_height="@dimen/item_edit_icon_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/edit_icon_description"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

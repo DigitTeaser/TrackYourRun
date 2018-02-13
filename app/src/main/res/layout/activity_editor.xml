@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Date category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/category_height">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_date" />
+
+            <!-- Input fields: Date Picker -->
+            <TextView
+                android:id="@+id/date_view"
+                style="@style/PickerViewStyle"
+                tools:text="Sun, Feb 11, 2018" />
+        </LinearLayout>
+
+        <!-- Time category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/category_height">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_time" />
+
+            <!-- Input fields: Time Picker -->
+            <TextView
+                android:id="@+id/time_view"
+                style="@style/PickerViewStyle"
+                tools:text="21:30" />
+        </LinearLayout>
+
+        <!-- Duration category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/category_height">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_duration" />
+
+            <!-- Input fields: Duration dialog -->
+            <TextView
+                android:id="@+id/duration_view"
+                style="@style/PickerViewStyle"
+                android:text="@string/duration_half_hour" />
+        </LinearLayout>
+
+        <!-- Distance category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/category_height">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_distance" />
+
+            <!-- Input fields: Distance EditText with unit Spinner -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/activity_spacing"
+                android:paddingRight="@dimen/activity_spacing">
+
+                <EditText
+                    android:id="@+id/edit_distance"
+                    android:layout_width="@dimen/editor_width"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/editor_hint_distance"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/colorAccent" />
+
+                <Spinner
+                    android:id="@+id/spinner_distance_unit"
+                    android:layout_width="@dimen/distance_unit_spinner_width"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

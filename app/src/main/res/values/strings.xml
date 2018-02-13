@@ -1,0 +1,64 @@
+<resources>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">Track Your Run</string>
+
+    <!-- Text in the empty view [CHAR LIMIT=NONE] -->
+    <string name="empty_text">Touch here to add your first run.</string>
+
+    <!-- Title for the activity to add a new run [CHAR LIMIT=20] -->
+    <string name="editor_activity_title">Add a Run</string>
+
+    <!-- Action title in the appbar and snack bar -->
+    <string name="action_insert_data">Add a New Run</string>
+    <string name="action_delete_all_entries">Delete All Runs</string>
+    <string name="action_save">Save</string>
+    <string name="action_undo">Undo</string>
+
+    <!-- Delete text in the item background -->
+    <string name="delete">Delete</string>
+
+    <!-- Category labels in the editor activity [CHAR LIMIT=20] -->
+    <string name="category_date">Date</string>
+    <string name="category_time">Time</string>
+    <string name="category_duration">Duration</string>
+    <string name="category_distance">Distance</string>
+
+    <!-- Distance unit in the spinner [CHAR LIMIT=20] -->
+    <string name="distance_unit_kilo">km</string>
+    <string name="distance_unit_mile">mile</string>
+
+    <!-- Duration selections in the duration dialog [CHAR LIMIT=20] -->
+    <string name="duration_half_hour">30 minutes</string>
+    <string name="duration_one_hour">1 hour</string>
+    <string name="duration_two_hour">2 hours</string>
+    <string name="duration_custom">Custom&#8230;</string>
+
+    <!-- Text in the custom duration dialog [CHAR LIMIT=20] -->
+    <string name="custom_duration_title">Custom Duration</string>
+    <string name="duration_unit_hour">hr</string>
+    <string name="duration_unit_minute">min</string>
+    <string name="time_hour">&#160;hour&#160;</string>
+    <string name="time_hours">&#160;hours&#160;</string>
+    <string name="time_minute">&#160;minute</string>
+    <string name="time_minutes">&#160;minutes</string>
+
+    <!-- Editor hint number [CHAR LIMIT=NONE] -->
+    <string name="editor_hint_distance">10</string>
+    <string name="editor_hint_duration_hour">1</string>
+    <string name="editor_hint_duration_minute">30</string>
+
+    <!-- Text in the delete all runs dialog [CHAR LIMIT=NONE] -->
+    <string name="confirm_deletion">Confirm Deleting All Runs</string>
+    <string name="deletion_warning">Warning: This can NOT be recovered.</string>
+
+    <!-- Toast and snack bar text string [CHAR LIMIT=NONE] -->
+    <string name="run_add_success">Run added.</string>
+    <string name="run_add_error">Error with adding run.</string>
+    <string name="run_update_success">Run updated.</string>
+    <string name="run_update_error">Error with updating run.</string>
+    <string name="run_delete">Run deleted.</string>
+
+    <!-- ImageView content description -->
+    <string name="edit_icon_description">This is the edit icon in each item of the list.</string>
+    <string name="delete_icon_description">This is the delete icon in each item of the list.</string>
+</resources>

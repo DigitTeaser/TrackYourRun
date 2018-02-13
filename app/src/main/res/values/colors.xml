@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+    <!-- Color for a run with different distance -->
+    <color name="distance_one">#4A7BA7</color>
+    <color name="distance_two">#04B4B3</color>
+    <color name="distance_three">#10CAC9</color>
+    <color name="distance_four">#F5A623</color>
+    <color name="distance_five">#FF7D50</color>
+    <color name="distance_six">#FC6644</color>
+    <color name="distance_seven">#E75F40</color>
+    <color name="distance_eight">#E13A20</color>
+    <color name="distance_nine">#D93218</color>
+    <color name="distance_ten">#C03823</color>
+</resources>

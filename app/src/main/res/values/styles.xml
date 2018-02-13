@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for a category in the editor -->
+    <style name="CategoryStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/category_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/activity_spacing</item>
+    </style>
+
+    <!-- Style for the picker TextView in the editor -->
+    <style name="PickerViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/editor_text_size</item>
+        <item name="android:padding">@dimen/activity_spacing</item>
+    </style>
+
+    <!-- Style for the EditView in the custom duration dialog. -->
+    <style name="DialogDurationEditViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/editor_width</item>
+        <item name="android:layout_marginLeft">@dimen/activity_spacing</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:inputType">number</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textSize">@dimen/custom_duration_edit_text_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for the hour and minute TextView in the custom duration dialog. -->
+    <style name="DialogDurationTextViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/custom_duration_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

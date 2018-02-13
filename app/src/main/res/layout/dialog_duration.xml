@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/custom_duration_hour"
+        style="@style/DialogDurationEditViewStyle"
+        android:hint="@string/editor_hint_duration_hour" />
+
+    <TextView
+        style="@style/DialogDurationTextViewStyle"
+        android:text="@string/duration_unit_hour" />
+
+    <EditText
+        android:id="@+id/custom_duration_minute"
+        style="@style/DialogDurationEditViewStyle"
+        android:hint="@string/editor_hint_duration_minute" />
+
+    <TextView
+        style="@style/DialogDurationTextViewStyle"
+        android:text="@string/duration_unit_minute" />
+</LinearLayout>
