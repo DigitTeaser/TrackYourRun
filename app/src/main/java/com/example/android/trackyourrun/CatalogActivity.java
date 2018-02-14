@@ -238,14 +238,15 @@ public class CatalogActivity extends AppCompatActivity
                     .addCallback(new Snackbar.Callback() {
                         @Override
                         public void onDismissed(Snackbar transientBottomBar, int event) {
-                            // When snack bar closed on its own, delete the item from database.
-                            if (event == Snackbar.Callback.DISMISS_EVENT_TIMEOUT ||
-                                    event == Snackbar.Callback.DISMISS_EVENT_CONSECUTIVE) {
-                                // Delete the row in database.
+                            if (event != Snackbar.Callback.DISMISS_EVENT_ACTION) {
+                                // When snack bar closed normally, delete the item from database.
                                 deleteRuns(deletedItem.getId());
-                                // If all items are deleted, show empty view tell user what to do next.
-                                if (mAdapter.getItemCount() == 0 &&
-                                        event == Snackbar.Callback.DISMISS_EVENT_TIMEOUT) {
+
+                                if (event == Snackbar.Callback.DISMISS_EVENT_TIMEOUT &&
+                                        mAdapter.getItemCount() == 0) {
+                                    // If all items are deleted, delete the last item in database,
+                                    // and show empty view tell user what to do next.
+                                    deleteRuns(null);
                                     mEmptyView.setVisibility(View.VISIBLE);
                                 }
                             }
