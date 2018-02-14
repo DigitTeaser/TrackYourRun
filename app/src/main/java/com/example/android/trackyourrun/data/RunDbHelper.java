@@ -21,12 +21,18 @@ public class RunDbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     /**
+     * Context passed in through the constructor.
+     */
+    private Context mContext;
+
+    /**
      * Constructs a new instance of {@link RunDbHelper}.
      *
      * @param context of the app.
      */
     public RunDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        mContext = context;
     }
 
     /**
@@ -52,6 +58,8 @@ public class RunDbHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // The database is still at version 1, so there's nothing to do be done here.
+        // The database is still at version 1, so there's just recreate the database.
+        mContext.deleteDatabase(RunEntry.TABLE_NAME);
+        onCreate(db);
     }
 }
